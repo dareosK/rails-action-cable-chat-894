@@ -22,6 +22,7 @@ export default class extends Controller {
   }
 
   resetForm(event){
+    // resets the form for the sender only!
     event.target.reset()
   }
 }
