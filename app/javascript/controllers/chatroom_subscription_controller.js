@@ -25,4 +25,9 @@ export default class extends Controller {
     // resets the form for the sender only!
     event.target.reset()
   }
+
+  disconnect() {
+    console.log(`Unsubscribed from Channel ${this.chatroomIdValue}`)
+    this.channel.unsubscribe()
+  }
 }
